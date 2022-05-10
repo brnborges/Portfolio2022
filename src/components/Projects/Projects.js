@@ -1,10 +1,11 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import narutoGame from "../../Assets/Projects/narutogame1.png";
-import houseFinder1 from "../../Assets/Projects/housefinder1.png";
-import houseFinder5 from "../../Assets/Projects/housefinder5.png";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import ProjectCard from './ProjectCards'
+import Particle from '../Particle'
+import narutoGame from '../../Assets/Projects/narutogame1.png'
+import houseFinder1 from '../../Assets/Projects/housefinder1.png'
+import houseFinder5 from '../../Assets/Projects/housefinder5.png'
+import doctorCare from '../../Assets/Projects/web1.png'
 
 function Projects() {
   return (
@@ -14,10 +15,19 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="blue">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: 'white' }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={doctorCare}
+              isBlog={false}
+              title="DoctorCare"
+              description="DoctorCare is a tool to streamline consultation processes and assist patients in an organized and practical way."
+              link="https://github.com/brnborges/DoctorCare"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={houseFinder1}
@@ -50,7 +60,7 @@ function Projects() {
         </Row>
       </Container>
     </Container>
-  );
+  )
 }
 
-export default Projects;
+export default Projects
