@@ -9,7 +9,7 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 
 const resumeLink =
-  'https://raw.githubusercontent.com/brnborges/Portfolio2022/main/BrunoResume.pdf'
+  'https://raw.githubusercontent.com/brnborges/Portfolio2022/master/src/Assets/BrunoResume.pdf'
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200)
