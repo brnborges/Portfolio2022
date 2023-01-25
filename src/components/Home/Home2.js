@@ -1,13 +1,9 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import myImg from '../../Assets/avatar.svg'
+import Tilt from 'react-parallax-tilt'
+import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 function Home2() {
   return (
@@ -15,34 +11,32 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: '2.6em' }}>
               LET ME <span className="blue"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            Professional recently graduated in BSc Science in Computing & Multimedia, passionate about technology, 
-            with a good understanding of web development and IT infrastructure. 
+              Professional recently graduated BSc in Computer Science,
+              passionate about technology, with a good understanding of web
+              development and IT infrastructure.
               <br />
-              <br />Practical knowledge of software development using 
-              <i>
-                <b className="blue"> JavaScript, TypeScript and React, 
-              HTML and CSS &nbsp;</b>
-              </i>
-              with exposure to software development lifecycle and the principles of an Agile environment. 
-              Knowledge of back-end and front-end technologies, frameworks, and services, with a good understanding of relational databases.
-              <br />
-              <br />
-              Excellent communication and relationship skills with the ability to contribute and work effectively within a team, 
-              demonstrating strong analytical and problem-solving abilities.
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="blue">Node.js</b> and
+              <br />I have practical knowledge of software development using
+              technologies such as
               <i>
                 <b className="blue">
-                  {" "}
-                  Modern Javascript Library and Frameworks
+                  {' '}
+                  JavaScript, TypeScript, React, React Native and NodeJS. &nbsp;
                 </b>
               </i>
+              <br />
+              <br />
+              Over the years, I have acquired excellent communication and
+              relationship skills with the ability to contribute and work
+              effectively in a team, demonstrating strong analytical and
+              problem-solving skills.
+              <br />
+              <br />I am a determined person and very engaged in learning new
+              things.
+              <i></i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -83,6 +77,6 @@ function Home2() {
         </Row>
       </Container>
     </Container>
-  );
+  )
 }
-export default Home2;
+export default Home2
